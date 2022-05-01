@@ -8,6 +8,12 @@ This crypto trading bot is 100% python. It uses the CCXT library to get informat
 **Gemini Sandbox API Needed:**
 - https://exchange.sandbox.gemini.com/
 - You need to create an account and then an API.
+- The you will need to change the API in bot.py
+
+```bash
+#Update API
+api = gemini.PrivateClient("EXAMPLE_PUBLIC_KEY", "EXAMPLE_PRIVATE_KEY", sandbox=True)
+```
 
 Gemini sandbox is a paper trading account created by Gemini which allows you to play around with fake money so you dont have to play with your own.
 
