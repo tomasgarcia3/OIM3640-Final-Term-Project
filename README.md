@@ -13,52 +13,53 @@ Gemini sandbox is a paper trading account created by Gemini which allows you to 
 
 ## Dependencies to Install:
 
-**CCXT Library:
+**CCXT Library:**
 - 'pip install ccxt'
 - https://docs.ccxt.com/en/latest/manual.html
 
-**TA-Lib Library:
+**TA-Lib Library:**
 - 'pip install TA-Lib'
 - https://pypi.org/project/TA-Lib/
 If that does not work try this:
 - https://www.youtube.com/watch?v=hZIZMMcTQ8c
 - https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib
 
-**Gemini:
+**Gemini**
 - 'pip install gemini_python'
 - https://github.com/mtusman/gemini-python
 
-**Pandas:
+**Pandas**
 - 'pip install pandas'
 - https://pypi.org/project/pandas/
 
-**Numpy:
+**Numpy:**
 - 'pip install numpy'
 - https://numpy.org/install/
 
-**DateTime:
+**DateTime:**
 - 'pip install DateTime'
 - https://pypi.org/project/DateTime/
 
-**Time:
+**Time:**
 - 'pip install times'
 - https://pypi.org/project/times/
 
 ## Resources
-**CCXT functionalities:
+**CCXT functionalities:**
 - https://docs.ccxt.com/en/latest/manual.html
 
-**TAlib Indicators:
+**TAlib Indicators:**
 - https://hexdocs.pm/talib/TAlib.Indicators.RSI.html
 
-**Gemini API commands:
+**Gemini API commands:**
 - https://docs.gemini.com/rest-api/#get-notional-balances
 
-**Time:
+**Time**
 - https://www.tutorialspoint.com/python/time_sleep.htm
 
-**Projects:
+**Projects:**
 - https://github.com/MaciejSzelest/Cryptocurrency-bot-Binance---API-/blob/main/main_bot.py
 - https://medium.com/geekculture/building-a-basic-crypto-trading-bot-in-python-4f272693c375
+- https://github.com/pirate/crypto-trader/blob/master/README.md
 
 ## Good luck!
