@@ -11,6 +11,9 @@ This crypto trading bot is 100% python. It uses the CCXT library to get informat
 
 Gemini sandbox is a paper trading account created by Gemini which allows you to play around with fake money so you dont have to play with your own.
 
+## Project Information and Instrucitons:
+Refer to `project_webstite.html`
+
 ## Dependencies to Install:
 
 **CCXT Library:**
