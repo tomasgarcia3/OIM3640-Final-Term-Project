@@ -54,12 +54,13 @@ If that does not work try this:
 **Gemini API commands:**
 - https://docs.gemini.com/rest-api/#get-notional-balances
 
-**Time**
+**Time:**
 - https://www.tutorialspoint.com/python/time_sleep.htm
 
 **Projects:**
-- https://github.com/MaciejSzelest/Cryptocurrency-bot-Binance---API-/blob/main/main_bot.py
 - https://medium.com/geekculture/building-a-basic-crypto-trading-bot-in-python-4f272693c375
+- https://github.com/MaciejSzelest/Cryptocurrency-bot-Binance---API-/blob/main/main_bot.py
 - https://github.com/pirate/crypto-trader/blob/master/README.md
+- https://github.com/mtusman/gemini-python
 
 ## Good luck!
