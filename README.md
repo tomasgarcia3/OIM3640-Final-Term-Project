@@ -20,21 +20,18 @@ Gemini sandbox is a paper trading account created by Gemini which allows you to 
 **TA-Lib Library:**
 - 'pip install TA-Lib'
 - https://pypi.org/project/TA-Lib/
+
 If that does not work try this:
 - https://www.youtube.com/watch?v=hZIZMMcTQ8c
 - https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib
 
-**Gemini**
+**Gemini:**
 - 'pip install gemini_python'
 - https://github.com/mtusman/gemini-python
 
-**Pandas**
+**Pandas:**
 - 'pip install pandas'
 - https://pypi.org/project/pandas/
-
-**Numpy:**
-- 'pip install numpy'
-- https://numpy.org/install/
 
 **DateTime:**
 - 'pip install DateTime'
@@ -44,7 +41,7 @@ If that does not work try this:
 - 'pip install times'
 - https://pypi.org/project/times/
 
-## Resources
+## Attributions
 **CCXT functionalities:**
 - https://docs.ccxt.com/en/latest/manual.html
 
