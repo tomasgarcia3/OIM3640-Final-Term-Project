@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Website</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .center {
+        text-align: center;
+      }
+      li a {
+        color: aqua;
+      }
+
+      h2 {
+        color: goldenrod;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <div class="center">
+      <h1>OIM3640 Final Term Project</h1>
+    </div>
+    <hr />
+    <h2>The Crypto Trading Bot</h2>
+    <h4>Big Idea:</h4>
+    <p>
+      The idea behind this project was to create a crypto trading bot that would
+      collect data on a crypto coin, then analyze its metrics and finally create
+      a buy or sell order based on the trading strategy.
+    </p>
+    <h4>Goal:</h4>
+    <p>
+      My main goal with this project was not only to create a profitable trading
+      bot, but also being able to learn more about python and improve my skills
+      as well as understanding of the features and frameworks.
+    </p>
+    <h4>Why did I do this:</h4>
+    <p>
+      The main reason why I chose to build a crypto trading bot as my final
+      project was because I like to keep up and invest in financial markets and
+      always though how insteresting it would be to explore the possibilities of
+      a trading bot. Before this experience I had never interacted with a
+      trading bot so it made me realize many things about using trading bots to
+      make money. On one end, I now understand the complexity that comes with
+      profitable trading bots and the enormous amount of time that has to be put
+      into it. I spent so much time in this project and it does not even come
+      close to being completely profitable. However although I found this
+      complex an challenging, I can see why many banks and financial entities
+      are investing so much money into trading algorithms and bots because of
+      how efficient they are to collect and process data.
+    </p>
+    <hr />
+    <h2>User Instructions</h2>
+    <p>
+      This crypto trading bot uses 100% python. It uses the CCXT library to get
+      information about ticker, used TA-LIB library for the analysis matrics,
+      and Gemini Sandbox exchange to place orders.
+    </p>
+    <h3>Steps to follow:</h3>
+    <h4>1. Get Gemini Sandbox API</h4>
+    <p>
+      Follow the link below to create an account and get the API with Gemini
+      Sandbox.
+    </p>
+    <ul>
+      <li>
+        <a href="https://exchange.sandbox.gemini.com/"
+          >https://exchange.sandbox.gemini.com/</a
+        >
+      </li>
+    </ul>
+    <h4>2. Install all dependencies</h4>
+    <p>TA-Lib Library:</p>
+    <ul>
+      <li>pip install TA-Lib</li>
+      <li>
+        <a href="https://pypi.org/project/TA-Lib/"
+          >https://pypi.org/project/TA-Lib/</a
+        >
+      </li>
+      <br />
+      If that does not work try this:
+      <li>
+        <a href="https://www.youtube.com/watch?v=hZIZMMcTQ8c"
+          >https://www.youtube.com/watch?v=hZIZMMcTQ8c</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/mtusman/gemini-python"
+          >https://github.com/mtusman/gemini-python</a
+        >
+      </li>
+    </ul>
+    <p>Gemini:</p>
+    <ul>
+      <li>pip install gemini_python</li>
+      <li>
+        <a href="https://docs.ccxt.com/en/latest/manual.html"
+          >https://docs.ccxt.com/en/latest/manual.html</a
+        >
+      </li>
+    </ul>
+    <p>Pandas:</p>
+    <ul>
+      <li>pip install pandas</li>
+      <li>
+        <a href="https://pypi.org/project/pandas/"
+          >https://pypi.org/project/pandas/</a
+        >
+      </li>
+    </ul>
+    <p>Time:</p>
+    <ul>
+      <li>pip install times</li>
+      <li>
+        <a href="https://pypi.org/project/times/"
+          >https://pypi.org/project/times/</a
+        >
+      </li>
+    </ul>
+    <h4>3. Download bot.py</h4>
+    <p>Once you have installed all dependencies you can download the bot.</p>
+    <h4>4. Update API with your own</h4>
+    <p>Then you would need to update the api with your own public and private key. </p>
+    <h4>5. Run bot with desired ticker</h4>
+    <p>You can run the bot to make money/or lose. Good luck!</p>
+    <hr />
+    <h2>Implementation Information</h2>
+    <h3>Bot.py is composed of 4 functions:</h3>
+    <h4>1. Collects data</h4>
+    <p>
+      The first function uses CCXT library to collect information from ticker.
+    </p>
+    <div class="center">
+      <img src="images/collectData.png" alt="Collect Data" />
+    </div>
+    <h4>2. Analyzes the data</h4>
+    <p>
+      Afterwards, this function take sin the data and obtains RSI which is used
+      to determine if the coin should be bought based on whether it was oversold
+      or overbought.
+    </p>
+    <div class="center">
+      <img src="images/analyzeData.png" alt="Analyze Data" />
+    </div>
+    <h4>3. Executes trade</h4>
+    <p>
+      The order function would then get the recommendation and either buy, sell
+      or wait based on what is recommended in the analysis.
+    </p>
+    <div class="center">
+      <img src="images/placeOrder.png" alt="Place order" />
+    </div>
+    <h4>4. Putting everything together</h4>
+    <p>
+      Finally this function puts everything together and in the desired order.
+      It will also communicate each time the type of recommendation given.Keep
+      in mind that if the previous recommendation is the same it will not be
+      executed again. Meaning that if the exchange bought the ticker it will not
+      buy it again if the recommendation to buy is given a second time in a row.
+    </p>
+    <div class="center">
+      <img src="images/runBot.png" alt="Run Bot" />
+    </div>
+    <hr />
+    <h2>Results</h2>
+    <h4>Waiting to place order</h4>
+    <p>
+      The software is running and will not place a buy or sell order unless is
+      recommended by the RSI trading strategy.
+    </p>
+    <div class="center">
+      <img src="images/waitResult.png" alt="Waiting Results" />
+    </div>
+    <h4>Placing a BUY order</h4>
+    <p>
+      Once the RSI strategy recommends to buy the ticker then the order will be
+      executed and recorded.
+    </p>
+    <div class="center">
+      <img src="images/buyResult.png" alt="Buying Results" />
+    </div>
+    <h4>Keeping order</h4>
+    <p>
+      As you can see the program recognizes a BUY order has already been
+      executed and thus it will not buy more unless a SELL order is places.
+    </p>
+    <div class="center">
+      <img src="images/unchangedResult.png" alt="Unchanged Results" />
+    </div>
+    <h4>Placing a SELL order</h4>
+    <p>
+      The program waits until the RSI trading strategy recommends to sell the
+      order.
+    </p>
+    <div class="center">
+      <img src="images/sellResult.png" alt="Selling Results" />
+    </div>
+    <hr />
+    <h2>Project Evolution</h2>
+    <p>
+      The creation was not easy. It involved a lot of learning about using the
+      different libraries and existing programs for this bot to work. I
+      initially thought that it was not going to be too hard, but I was
+      mistaken.
+    </p>
+    <p>
+      The process started by looking at different existing bots. Most were
+      written in python but even others in languages like JavaScript. In this
+      step, I saw many approaches that I considered taking, however, in the
+      first attempts I ended up finding barriers that were very hard to pass.
+      Some involved deep learning of Pandas and NumPy which I did not have.
+      Others involved deep technical skills with respect to analysis and
+      algorithms which I couldn't even understand. With this said, I had to
+      start over many times. This is when I decided to take a more simple
+      approach and use libraries to facilitate the development of this program.
+    </p>
+    <p>
+      Once I entered the mentality of simplicity and learned about different
+      libraries I was able to find the way to build this program. First of all,
+      I found inspiration in the structure of this program from one of the
+      resources listed below. This allowed me to figure out that the program
+      could just be an integration of 4 functions in which one collects the
+      data, the second analyzes the data, the third executed the order, and the
+      fourth just brings the program together. Once I figured this out I began
+      by collecting the data from the CCXT library. I knew the data I needed
+      depended on the purpose of analysis so I also dug deeper into TA-Lib and
+      determined I would use RSI as my indicator. I chose RSI because it was a
+      term I knew from before and seemed relatively simple to determine when the
+      crypto was overbought or oversold (The links to finding more information
+      about these two libraries and the ways they can be used are below). Then I
+      proceeded to incorporate the Gemini Sandbox API into the program to
+      execute the order based on the buy or sell signal. For this, I also used
+      the resource on their website to find more information about how to create
+      this order and get information from the ticker using the API. I finally
+      put everything together and got the desired result.
+    </p>
+    <p>
+      I want to say that this process was hard and I failed many times in the
+      process. I took different approaches along the way to find barriers that
+      would not let me continue. It was frustrating at times to have to start
+      over again but I am glad I did not quit because I feel like I learned a
+      lot along the way. The result was possible through a lot of investigation
+      and learning found in the resources listed below. With respect to the
+      profitability of my bot, I want to say that it still relies on a lot of
+      luck. Even though the example above shows a profit made from buying and
+      selling in some cases before and after the trade came out to a loss. So
+      while I was unable to make a profitable bot, I still got all the learning
+      experiences I wanted out of this assignment.
+    </p>
+    <hr />
+    <h2>Attributions</h2>
+    <p>CCXT functionalities:</p>
+    <ul>
+      <li>
+        <a href="https://docs.ccxt.com/en/latest/manual.html"
+          >https://docs.ccxt.com/en/latest/manual.html</a
+        >
+      </li>
+    </ul>
+    <p>TAlib Indicators:</p>
+    <ul>
+      <li>
+        <a href="https://hexdocs.pm/talib/TAlib.Indicators.RSI.html"
+          >https://hexdocs.pm/talib/TAlib.Indicators.RSI.html</a
+        >
+      </li>
+    </ul>
+    <p>Gemini API commands:</p>
+    <ul>
+      <li>
+        <a href="https://docs.gemini.com/rest-api/#get-notional-balances"
+          >https://docs.gemini.com/rest-api/#get-notional-balances</a
+        >
+      </li>
+    </ul>
+    <p>Time:</p>
+    <ul>
+      <li>
+        <a href="https://www.tutorialspoint.com/python/time_sleep.htm"
+          >https://www.tutorialspoint.com/python/time_sleep.htm</a
+        >
+      </li>
+    </ul>
+    <p>Projects:</p>
+    <ul>
+      <li>
+        <a href="https://medium.com/geekculture/building-a-basic-crypto-trading-bot-in-python-4f272693c375"
+          >https://medium.com/geekculture/building-a-basic-crypto-trading-bot-in-python-4f272693c375</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/mtusman/gemini-python"
+          >https://github.com/mtusman/gemini-python</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/MaciejSzelest/Cryptocurrency-bot-Binance---API-/blob/main/main_bot.py"
+          >https://github.com/MaciejSzelest/Cryptocurrency-bot-Binance---API-/blob/main/main_bot.py</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/pirate/crypto-trader/blob/master/README.md"
+          >https://github.com/pirate/crypto-trader/blob/master/README.md</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>
