@@ -63,4 +63,4 @@ If that does not work try this:
 - https://github.com/pirate/crypto-trader/blob/master/README.md
 - https://github.com/mtusman/gemini-python
 
-## Good luck!
+## This bot can make/or lose money, Good luck!
